@@ -68,6 +68,28 @@ Open http://localhost:3000.
 
 **DELETE /api/pages/[id] → remove**
 
+## 🖱 Usage Flow
+
+1. **Open Editor**  
+   Go to `/admin/pages/new` to create a new page or `/admin/pages/[id]` to edit an existing one.
+
+2. **Drag & Drop**  
+   - Pick widgets from the **WidgetPalette** on the left.  
+   - Drop them onto the **DroppableCanvas** or into a grid cell.
+
+3. **Select a Block**  
+   Click a block in the canvas to open its **SettingsPanel** on the right.
+
+4. **Configure Styles & Props**  
+   Adjust margins, paddings, colors, typography, grid settings, etc., and see the live preview.
+
+5. **Save or Publish**  
+   Use the **Save Draft** or **Publish** buttons in the header to persist your changes.
+
+6. **View Public Page**  
+   Visit `/[slug]` to view the published page on the front end.
+
+
 
 
 
