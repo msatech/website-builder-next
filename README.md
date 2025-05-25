@@ -25,3 +25,70 @@ A WordPress-like visual site builder built with Next.js, Tailwind CSS, and shadc
    ```bash
    git clone https://github.com/msatech/website-builder-next.git
    cd website-builder-next
+
+2. **Project Structure**
+├── prisma/
+│   └── schema.prisma             # Data model (Page, blocks stored as JSON)
+├── public/                       # Static assets
+├── src/
+│   ├── app/
+│   │   └── admin/pages/          # Admin editor UI (drag + drop)
+│   ├── components/               # Reusable components
+│   │   ├── BlockEditor/          # Types & context for blocks
+│   │   ├── BlockRenderers/       # Heading, Paragraph, Image, Grid, etc.
+│   │   ├── DroppableCanvas.tsx   # Canvas dropzone
+│   │   ├── SettingsPanel.tsx     # Style & prop controls
+│   │   └── WidgetPalette.tsx     # Drag-and-drop widget list
+│   ├── lib/
+│   │   └── prisma.ts             # Prisma client
+│   ├── pages/
+│   │   └── api/pages/            # CRUD API routes for pages
+│   ├── styles/                   # Tailwind + global styles
+│   └── hooks/                    # Custom React hooks (optional)
+├── .env.example                  # Example environment vars
+├── README.md                     # This file
+└── package.json                  # Scripts & dependencies
+
+2. **Databse Setup**
+npx prisma migrate dev --name init
+npx prisma generate
+
+3. **Run Dev Server**
+npm run dev
+Open http://localhost:3000.
+
+##  Project Structure
+├── prisma/
+│   └── schema.prisma             # Data model (Page, blocks stored as JSON)
+├── public/                       # Static assets
+├── src/
+│   ├── app/
+│   │   └── admin/pages/          # Admin editor UI (drag + drop)
+│   ├── components/               # Reusable components
+│   │   ├── BlockEditor/          # Types & context for blocks
+│   │   ├── BlockRenderers/       # Heading, Paragraph, Image, Grid, etc.
+│   │   ├── DroppableCanvas.tsx   # Canvas dropzone
+│   │   ├── SettingsPanel.tsx     # Style & prop controls
+│   │   └── WidgetPalette.tsx     # Drag-and-drop widget list
+│   ├── lib/
+│   │   └── prisma.ts             # Prisma client
+│   ├── pages/
+│   │   └── api/pages/            # CRUD API routes for pages
+│   ├── styles/                   # Tailwind + global styles
+│   └── hooks/                    # Custom React hooks (optional)
+├── .env.example                  # Example environment vars
+├── README.md                     # This file
+└── package.json                  # Scripts & dependencies
+
+## API Routes
+**GET /api/pages/[id] → fetch page JSON**
+
+**POST /api/pages → create new page**
+
+**PUT /api/pages/[id] → update existing**
+
+**DELETE /api/pages/[id] → remove**
+
+
+
+
