@@ -2,6 +2,14 @@
 
 A WordPress-like visual site builder built with Next.js, Tailwind CSS, and shadcn/ui. Drag-and-drop widgets, real-time layout & design controls, and dynamic block rendering powered by Prisma and Next.js API routes.
 
+## Admin > Add Pages
+![image](https://github.com/user-attachments/assets/0030ca0c-0ee3-4435-881e-5f3ae1d31716)
+
+##Page Preview
+![image](https://github.com/user-attachments/assets/d0bcc506-2cf0-4938-b2a3-8b5be7690404)
+
+
+
 ## Features
 
 - **Visual Drag-and-Drop Editor**: Use a widget palette to drag blocks (heading, paragraph, image, list, quote, code, table, gallery, audio, video, grid) onto the canvas.
